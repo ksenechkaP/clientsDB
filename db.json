@@ -1,0 +1,19 @@
+{
+  "clients": [
+    {
+      "id": 2,
+      "email": "first@mail.com",
+      "name": "Tom Petersom"
+    },
+    {
+      "id": 3,
+      "email": "jack@mail.commm",
+      "name": "Jack Daniel"
+    },
+    {
+      "id": 4,
+      "email": "ricky@smith.com",
+      "name": "Ricky Smith gr"
+    }
+  ]
+}

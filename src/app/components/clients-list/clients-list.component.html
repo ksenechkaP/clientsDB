@@ -1,0 +1,22 @@
+<a class="clientsDb__link" [routerLink]="['/add-client']">Add Client</a>
+
+<p-table [value]="clientsList" class="clientsDb__table">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>
+
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-client>
+    <tr>
+      <td>{{client.name}}</td>
+      <td>{{client.email}}</td>
+      <td>
+        <a class="clientsDb__link" [routerLink]="['/client', client.id]">editClient</a>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

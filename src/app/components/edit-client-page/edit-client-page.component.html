@@ -1,0 +1,17 @@
+<h2 *ngIf="!id">Add Client</h2>
+<h2 *ngIf="id">Edit Client</h2>
+<form *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="ui-inputgroup">
+    <input class="clientsDb__input" type="text" pInputText placeholder="Full Name" formControlName="name">
+  </div>
+  <div class="ui-inputgroup">
+    <input class="clientsDb__input" type="text" pInputText placeholder="Email" formControlName="email">
+  </div>
+  <button type="submit" class="clientsDb__button" [disabled]="form.invalid">
+    Save
+  </button>
+  <button *ngIf="id" type="button" class="clientsDb__button" (click)="deleteClient()">Delete</button>
+  <a class="clientsDb__button" [routerLink]="['']">Back</a>
+</form>
+
+<!-- <button type="button" (clicl)="saveUser()">Save</button> -->
